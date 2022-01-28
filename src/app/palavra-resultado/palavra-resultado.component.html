@@ -1,0 +1,20 @@
+<ul *ngFor="let palavra of palavras" class="d-flex">
+  <app-letra-show [letra]="letra" *ngFor="let letra of palavra.letras"></app-letra-show>
+</ul>
+<div class="row g-3 align-items-center" *ngIf="tamanho">
+  <div class="col-auto">
+    <label for="inputPassword6" class="col-form-label">Palavra com {{tamanho}} letras</label>
+  </div>
+  <div class="col-auto">
+    <input [(ngModel)]="palavraInput" (keyup.enter)="check(palavraInput)" type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+  <div class="col-auto">
+    <span id="passwordHelpInline" class="form-text">
+      Input contem {{palavraInput.length}} letras
+    </span>
+  </div>
+  <div class="col-auto">
+    <button (click)="check(palavraInput)" class="btn btn-primary">adicionar</button>
+  </div>
+</div>
+<div *ngIf="statusRequisicao == 400" class="text-danger">a palavra digitada não existe</div>

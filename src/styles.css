@@ -1,0 +1,4 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+.app-root {
+  background-color: rgba(151, 147, 142, 0.801);
+}

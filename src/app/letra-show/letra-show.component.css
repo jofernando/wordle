@@ -1,0 +1,22 @@
+.letter-wrapper {
+  border: 2px solid #252525;
+  font-size: 20px;
+  font-weight: bolder;
+  height: 40px;
+  width: 48px;
+}
+
+.displaced {
+	background-color: #c79c2e;
+	color: #f4f3f1;
+}
+
+.right {
+  background-color: #51b36e;
+  color: #f4f3f1;
+}
+
+.wrong {
+  background-color: #943e3c;
+  color: #f4f3f1;
+}
